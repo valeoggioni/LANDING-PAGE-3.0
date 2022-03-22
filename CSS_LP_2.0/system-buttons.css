@@ -1,0 +1,28 @@
+
+button {
+    border: 1px solid gray;
+    color: darkgreen;
+    padding: 15px 32px;
+    background-color: rgba(156, 236, 156, 0.219);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 38px 2px;
+    cursor: pointer;
+  }
+
+  @media (min-width: 900px){
+button {
+    border: 1px solid gray;
+    color: darkgreen;
+    padding: 15px 32px;
+    background-color: rgba(156, 236, 156, 0.219);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    margin: 38px 2px;
+    cursor: pointer;
+  }
+}

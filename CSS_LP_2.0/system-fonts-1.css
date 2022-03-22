@@ -1,0 +1,119 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: sans-serif;
+    
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 20px;
+    
+}
+
+ul {
+    font-size: 20px;
+}
+
+
+a {
+    font-family: monospace;
+    font-size: 20px;
+    color: darkgreen;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+
+
+  figcaption {
+      font-size: 18px;
+      width: 60%;
+  }
+
+  
+/* MEDIA QUERY FOR MEDIUM SCREENS */
+@media (min-width: 768px) and (max-width: 1000px) {
+    h1 {
+        font-size: 50px;
+    }
+    
+    h2 {
+        font-size: 45px;
+    }
+    
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 36px;
+    }
+    
+    p {
+        font-size: 32px;
+    }
+    
+    ul {
+        font-size: 32px;
+    }
+    
+    
+    a {
+        font-family: monospace;
+        font-size: 28px;
+        color: darkgreen;
+    } 
+}
+
+/* MEDIA QUERY FOR LARGE SCREENS */
+@media (min-width: 1001px) {
+    h1 {
+        font-size: 60px;
+    }
+    
+    h2 {
+        font-size: 55px;
+    }
+    
+    h3 {
+        font-size: 48px;
+    }
+    
+    p {
+        font-size: 40px;
+    }
+    
+    ul {
+        font-size: 32px;
+    }
+    
+    
+    a {
+        font-family: monospace;
+        font-size: 38px;
+        color: darkgreen;
+    } 
+
+    figcaption {
+        font-size: 34px;
+    }
+}
+

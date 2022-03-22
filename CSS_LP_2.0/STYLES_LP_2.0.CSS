@@ -1,0 +1,53 @@
+@import url(/CSS_LP_2.0/system-buttons.css);
+@import url(/CSS_LP_2.0/system-fonts-1.css);
+@import url(/CSS_LP_2.0/system-images.css);
+
+body {
+    background: rgba(235, 245, 147, 0.753);
+    /* background: linear-gradient(0 deg, rgb(235, 245, 147) 0%, rgb(215, 190, 232) 100%); */
+}
+
+img {
+    visibility: hidden;
+}
+
+.active-section img{
+    visibility: visible;
+}
+
+.title-and-activeimg {
+    display: flex;
+    justify-content: flex-end;
+    /* justify-content: space-around; */
+    padding: 1em;
+}
+
+/* NAV BAR MENU STYLES*/
+
+.navbar-menu li {
+    display: inline-block;
+
+}
+
+.navbar-menu .nav-menu-link {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.navbar-menu .nav-menu-link:hover {
+    background: rgb(215, 190, 232);
+    text-decoration: underline;
+
+}
+
+/*FOOTER STYLE*/
+
+footer {
+    background: rgb(215, 190, 232);
+    color: lavender;
+    padding-left: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
