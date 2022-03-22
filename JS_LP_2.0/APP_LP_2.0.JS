@@ -18,6 +18,12 @@ const sections = Array.from(document.getElementsByTagName('section'));
 /**
  * START HELPER FUNCTIONS
  */
+
+/**
+ * 
+ * FUNCTION TO DEFINE THE POSITION OF AN ELEMENT IN THE VIEWPORT
+ */
+
  function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
@@ -63,20 +69,18 @@ for (let section of sections) {
     
 // });
 
+/**
+ * FUNCTION TO ADD AND REMOVE 'ACTIVE-SECTION TO THE SECTION IN VIEWPORT
+ */
+
 document.addEventListener('scroll', function(){
     for(let section of sections) {
         if (isInViewport(section)) {
             section.classList.add('active-section');
 
-            // document
-            // .querySelector(`[data=${section.id}]`)
-            // .classList.add('active-section');
         } else {
             section.classList.remove('active-section');
 
-            // document
-            // .querySelector(`[data=${section.id}]`)
-            // .classList.remove('active-section');
         }
     }
 });
