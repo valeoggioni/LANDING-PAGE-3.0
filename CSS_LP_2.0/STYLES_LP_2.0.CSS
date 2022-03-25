@@ -1,3 +1,4 @@
+/* ---- Base Rules ---- */
 @import url(/CSS_LP_2.0/system-buttons.css);
 @import url(/CSS_LP_2.0/system-fonts-1.css);
 @import url(/CSS_LP_2.0/system-images.css);
@@ -6,26 +7,58 @@ body {
     background: rgba(235, 245, 147, 0.753);
     /* background: linear-gradient(0 deg, rgb(235, 245, 147) 0%, rgb(215, 190, 232) 100%); */
 }
+/* Typography General*/
 
-img {
-    visibility: hidden;
+
+
+/* ---- Layout Rules ---- */
+
+main{
+    margin: 10vh 1em 20vh;
 }
 
-.active-section img{
-    visibility: visible;
+section{
+    height: 1200px;
+}
+
+.section-container{
+    /* min-height: 1200px; */
+    padding: 10em;
 }
 
 .title-and-activeimg {
     display: flex;
     justify-content: flex-end;
-    /* justify-content: space-around; */
     padding: 1em;
 }
 
+.main-title {
+    min-height: 20vh;
+    padding-top: 7em;
+}
+
+
+
+/* Navigation Styles*/
 /* NAV BAR MENU STYLES*/
 
 .navbar-menu li {
     display: inline-block;
+}
+
+.navbar-menu ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.navbar-menu {
+    position: fixed;
+    background-color: rgb(170, 187, 243);
+    transition: all 0,3s ease-out;
+    top: 0;
+    width: 100%;
+    z-index: 5;
 
 }
 
@@ -41,7 +74,30 @@ img {
 
 }
 
-/*FOOTER STYLE*/
+
+
+/* Header Styles */
+
+header{
+    height: 3vh;
+    padding-top: 3em;
+}
+
+img {
+    visibility: hidden;
+}
+
+.active-section img{
+    visibility: visible;
+}
+
+.active-section {
+    background-color: rgba(85, 107, 47, 0.068);
+}
+
+
+
+/*FOOTER STYLES*/
 
 footer {
     background: rgb(215, 190, 232);

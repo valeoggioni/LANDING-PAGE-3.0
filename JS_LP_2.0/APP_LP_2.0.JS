@@ -8,6 +8,7 @@
  */
 
 const navList = document.querySelector('#navbar-list');
+const navMenu = document.querySelector('.navbar-menu');
 const sections = Array.from(document.getElementsByTagName('section'));
 
 /**
@@ -74,14 +75,21 @@ for (let section of sections) {
  */
 
 document.addEventListener('scroll', function(){
+    let navbarHeight = 100;
+    let distanceFromTop = Math.abs(
+        document.body.getBoundingClientRect().top
+    );
+
     for(let section of sections) {
-        if (isInViewport(section)) {
+        if (isInViewport(section))  {
             section.classList.add('active-section');
 
+            
         } else {
             section.classList.remove('active-section');
-
         }
     }
+
+
 });
 
