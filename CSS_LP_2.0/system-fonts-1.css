@@ -6,15 +6,15 @@ h4,
 h5,
 h6 {
     font-family: sans-serif;
-    
+
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 40px;
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -24,8 +24,8 @@ h3 {
 }
 
 p {
-    font-size: 20px;
-    
+    font-size: 14px;
+
 }
 
 ul {
@@ -48,72 +48,105 @@ a {
       width: 60%;
   }
 
-  
+
 /* MEDIA QUERY FOR MEDIUM SCREENS */
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 600px) and (max-width: 1500px) {
     h1 {
         font-size: 50px;
     }
-    
+
     h2 {
-        font-size: 45px;
-    }
-    
-    h3 {
         font-size: 40px;
     }
 
+    h3 {
+        font-size: 35px;
+    }
+
     h4 {
-        font-size: 36px;
+        font-size: 30px;
     }
-    
+
     p {
-        font-size: 32px;
+        font-size: 28px;
     }
-    
+
+    ul {
+        font-size: 20px;
+    }
+
+
+    a {
+        font-family: monospace;
+        font-size: 15px;
+        color: darkgreen;
+    }
+}
+
+/* MEDIA QUERY FOR LARGE SCREENS */
+@media (min-width: 1501px) and (max-width: 2500px) {
+    h1 {
+        font-size: 55px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 35px;
+    }
+
     ul {
         font-size: 32px;
     }
-    
-    
+
+
     a {
         font-family: monospace;
         font-size: 28px;
         color: darkgreen;
-    } 
-}
-
-/* MEDIA QUERY FOR LARGE SCREENS */
-@media (min-width: 1001px) {
-    h1 {
-        font-size: 60px;
     }
-    
-    h2 {
-        font-size: 55px;
-    }
-    
-    h3 {
-        font-size: 48px;
-    }
-    
-    p {
-        font-size: 40px;
-    }
-    
-    ul {
-        font-size: 32px;
-    }
-    
-    
-    a {
-        font-family: monospace;
-        font-size: 38px;
-        color: darkgreen;
-    } 
 
     figcaption {
         font-size: 34px;
     }
 }
 
+/* MEDIA QUERY FOR LARGE SCREENS */
+@media (min-width: 2501px) {
+    h1 {
+        font-size: 55px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 40px;
+    }
+
+    ul {
+        font-size: 32px;
+    }
+
+
+    a {
+        font-family: monospace;
+        font-size: 28px;
+        color: darkgreen;
+    }
+
+    figcaption {
+        font-size: 34px;
+    }
+}
