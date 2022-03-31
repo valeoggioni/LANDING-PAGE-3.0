@@ -1,7 +1,5 @@
 /* ---- Base Rules ---- */
-@import url(/CSS_LP_2.0/system-buttons.css);
 @import url(/CSS_LP_2.0/system-fonts-1.css);
-@import url(/CSS_LP_2.0/system-images.css);
 
 body {
     background: rgba(235, 245, 147, 0.753);
