@@ -1,6 +1,8 @@
 /* ---- Base Rules ---- */
 @import url(/CSS_LP_2.0/system-fonts-1.css);
 
+
+
 body {
     background: rgba(235, 245, 147, 0.753);
     /* background: linear-gradient(0 deg, rgb(235, 245, 147) 0%, rgb(215, 190, 232) 100%); */

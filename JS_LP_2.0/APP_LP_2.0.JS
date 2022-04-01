@@ -10,7 +10,7 @@
 const navList = document.querySelector('#navbar-list');
 const navMenu = document.querySelector('.navbar-menu');
 const sections = Array.from(document.getElementsByTagName('section'));
-const navLinks = Array.from(document.getElementsByClassName('.nav-menu-link'));
+
 
 /**
  * END GLOBAL VARIABLES
@@ -55,21 +55,9 @@ for (let section of sections) {
 
     listItem.appendChild(listItemLink);
     navList.appendChild(listItem);
+
 };
 
-// const navLinks = document.querySelectorAll('.nav-menu-link');
-// // const navLinks = Array.from(document.getElementsByClassName('nav-menu-link'));
-
-// navLinks.forEach(element => {
-//     element.addEventListener('click', () => {
-//         let sectionId = document.querySelector('section');
-//         console.log('clicked');
-
-//         sectionId.classList.add('active-section');
-
-//     })
-    
-// });
 
 /**
  * FUNCTION TO ADD AND REMOVE 'ACTIVE-SECTION' TO A SECTION DEPENDING IF IT IS IN VIEWPORT OR NOT
@@ -97,15 +85,16 @@ document.addEventListener('scroll', function(){
 /**
  * FUNCTION TO CREATE A SMOOTH BEHAVIOR TO THE SCROLLING
  */
+ const navLinks = Array.from(document.querySelectorAll('.nav-menu-link'));
 
-for (let navLink of navLinks) {
+ for (let navLink of navLinks) {
     navLink.addEventListener('click', function(event){
+        console.log('clicked');
         event.preventDefault();
-        window.scroll({
+        Window.scroll({
             behavior: "smooth"
         });
     });
 
 };
-
 
