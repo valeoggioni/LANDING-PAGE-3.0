@@ -48,7 +48,7 @@ for (let section of sections) {
     let listItemLink = document.createElement('a');
     let getSectionId = section.getAttribute('id');
 
-    listItemLink.href = '#' + getSectionId;
+    listItemLink.href = getSectionId;
     listItemLink.textContent = section.dataset.nav;
     listItemLink.classList.add('nav-menu-link');
     listItem.classList.add('nav-list-item');
@@ -91,9 +91,14 @@ document.addEventListener('scroll', function(){
     navLink.addEventListener('click', function(event){
         console.log('clicked');
         event.preventDefault();
-        Window.scroll({
+        console.log(event.target);
+        let sectionID = event.target.getAttribute('href');
+        console.log(sectionID);
+        let section = document.getElementById(sectionID);
+        section.scrollIntoView({
             behavior: "smooth"
         });
+       
     });
 
 };
