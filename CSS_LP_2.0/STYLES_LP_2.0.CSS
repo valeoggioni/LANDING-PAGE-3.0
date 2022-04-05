@@ -7,6 +7,7 @@ body {
     background: rgba(235, 245, 147, 0.753);
     /* background: linear-gradient(0 deg, rgb(235, 245, 147) 0%, rgb(215, 190, 232) 100%); */
 }
+
 /* Typography General is in the system-fonts-1*/
 
 
@@ -63,6 +64,11 @@ section{
     width: 100%;
     z-index: 5;
 
+}
+
+.active a {
+    background: rgb(215, 190, 232);
+    text-decoration: underline;
 }
 
 .navbar-menu .nav-menu-link {

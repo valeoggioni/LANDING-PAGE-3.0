@@ -64,21 +64,24 @@ for (let section of sections) {
  */
 
 document.addEventListener('scroll', function(){
-    // let navbarHeight = 100;
-    // let distanceFromTop = Math.abs(
-    //     document.body.getBoundingClientRect().top
-    // );
-
+   
     for(let section of sections) {
+
+        let sectionNavLink = document.querySelector(`a[href='#${section.id}']`);
+
         if (isInViewport(section))  {
             section.classList.add('active-section');
+            console.log("section in viewport");
 
+            sectionNavLink.classList.add('active');
             
         } else {
             section.classList.remove('active-section');
+
+            
+            sectionNavLink.classList.remove('active');
         }
     }
-
 
 });
 
