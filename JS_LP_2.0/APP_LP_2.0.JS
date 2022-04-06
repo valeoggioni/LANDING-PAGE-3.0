@@ -63,23 +63,50 @@ for (let section of sections) {
  * FUNCTION TO ADD AND REMOVE 'ACTIVE-SECTION' TO A SECTION DEPENDING IF IT IS IN VIEWPORT OR NOT
  */
 
+// document.addEventListener('scroll', function(){
+   
+//     for(let section of sections) {
+
+//         let sectionNavLink = document.querySelector(`[data='#${section.id}']`);
+
+//         if (isInViewport(section))  {
+//             section.classList.add('active-section');
+//             console.log("section in viewport");
+
+//             sectionNavLink.classList.add('active');
+            
+//         } else {
+//             section.classList.remove('active-section');
+
+            
+//             sectionNavLink.classList.remove('active');
+//         }
+//     }
+
+// });
+
 document.addEventListener('scroll', function(){
    
     for(let section of sections) {
 
-        let sectionNavLink = document.querySelector(`a[href='#${section.id}']`);
+        
 
         if (isInViewport(section))  {
             section.classList.add('active-section');
             console.log("section in viewport");
 
-            sectionNavLink.classList.add('active');
+            document
+                .querySelector(`a[href='${section.id}']`)
+                .classList.add('active-link');
+
             
         } else {
             section.classList.remove('active-section');
 
             
-            sectionNavLink.classList.remove('active');
+            document
+                .querySelector(`a[href='${section.id}']`)
+                .classList.remove('active-link');
         }
     }
 

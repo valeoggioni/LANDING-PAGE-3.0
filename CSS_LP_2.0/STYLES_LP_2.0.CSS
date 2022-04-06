@@ -66,7 +66,8 @@ section{
 
 }
 
-.active a {
+/*properties for the navbar when a section is active and highlighted*/
+.active-link {
     background: rgb(215, 190, 232);
     text-decoration: underline;
 }
