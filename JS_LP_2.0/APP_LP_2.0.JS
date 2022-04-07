@@ -48,6 +48,7 @@ for (let section of sections) {
     let listItemLink = document.createElement('a');
     let getSectionId = section.getAttribute('id');
 
+    
     listItemLink.href = getSectionId;
     listItemLink.textContent = section.dataset.nav;
     listItemLink.classList.add('nav-menu-link');
@@ -63,38 +64,17 @@ for (let section of sections) {
  * FUNCTION TO ADD AND REMOVE 'ACTIVE-SECTION' TO A SECTION DEPENDING IF IT IS IN VIEWPORT OR NOT
  */
 
-// document.addEventListener('scroll', function(){
-   
-//     for(let section of sections) {
-
-//         let sectionNavLink = document.querySelector(`[data='#${section.id}']`);
-
-//         if (isInViewport(section))  {
-//             section.classList.add('active-section');
-//             console.log("section in viewport");
-
-//             sectionNavLink.classList.add('active');
-            
-//         } else {
-//             section.classList.remove('active-section');
-
-            
-//             sectionNavLink.classList.remove('active');
-//         }
-//     }
-
-// });
 
 document.addEventListener('scroll', function(){
    
     for(let section of sections) {
 
-        
 
         if (isInViewport(section))  {
             section.classList.add('active-section');
             console.log("section in viewport");
 
+            //apply active class to the nav link
             document
                 .querySelector(`a[href='${section.id}']`)
                 .classList.add('active-link');
@@ -103,7 +83,7 @@ document.addEventListener('scroll', function(){
         } else {
             section.classList.remove('active-section');
 
-            
+             //remove active class to the nav link
             document
                 .querySelector(`a[href='${section.id}']`)
                 .classList.remove('active-link');
@@ -122,9 +102,13 @@ document.addEventListener('scroll', function(){
         console.log('clicked');
         event.preventDefault();
         console.log(event.target);
+
+        //get the specific location the page should show 
         let sectionID = event.target.getAttribute('href');
         console.log(sectionID);
         let section = document.getElementById(sectionID);
+        
+        //apply smooth behavior to the scrolling
         section.scrollIntoView({
             behavior: "smooth"
         });
