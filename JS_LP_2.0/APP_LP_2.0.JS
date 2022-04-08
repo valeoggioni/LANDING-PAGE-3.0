@@ -36,7 +36,7 @@ const sections = Array.from(document.getElementsByTagName('section'));
 
 
 /**
- * START MAIN FUNCTIONS
+ * START THE MAIN FUNCTIONS
  */
 
 // FUNCTION TO CREATE AND POPULATE NAV MENU
