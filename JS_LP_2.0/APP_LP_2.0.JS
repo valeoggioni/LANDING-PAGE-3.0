@@ -1,9 +1,9 @@
 
-/**
+/*
  * DEFINE GLOBAL VARIABLES
  */
 
-/**
+/*
  * FOR THE NAV MENU
  */
 
@@ -12,16 +12,14 @@ const navMenu = document.querySelector('.navbar-menu');
 const sections = Array.from(document.getElementsByTagName('section'));
 
 
-/**
+/*
  * END GLOBAL VARIABLES
- * 
  */
-
-/**
+/*
  * START HELPER FUNCTIONS
  */
 
-/**
+/*
  * 
  * FUNCTION TO DEFINE THE POSITION OF AN ELEMENT IN THE VIEWPORT
  */

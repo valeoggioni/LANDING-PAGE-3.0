@@ -86,9 +86,9 @@ section{
 
 /* Header Styles */
 
-header{
+.main-title{
     height: 3vh;
-    padding-top: 3em;
+    padding-top: 4em;
 }
 
 img {
